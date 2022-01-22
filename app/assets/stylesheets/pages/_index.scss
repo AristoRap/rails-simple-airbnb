@@ -1,2 +1,12 @@
 // Import page-specific CSS files here.
 @import "home";
+
+.flats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+}
+
+.background-white {
+  background-color: rgb(255, 255, 255);
+}

@@ -1,1 +1,18 @@
 <h1>Flats</h1>
+<div class="flats">
+  <% @flats.each do |flat| %>
+  <div class="card-flat">
+    <div class="card-flat-infos">
+      <h4><%= flat.name %></h4>
+      <p><%= flat.address %></p>
+      <div class="d-flex">
+        <h3 class='lead'><%= flat.number_of_guests %></h3>
+        <h3 class='lead'>€<%= flat.price_per_night %></h3>
+      </div>
+    </div>
+    <div class="card-flat-actions background-white">
+      <%= link_to 'More info' %>
+    </div>
+  </div>
+  <% end %>
+</div>
